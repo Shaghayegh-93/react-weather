@@ -11,11 +11,16 @@ const Weather = () => {
               type={"search"}
               placeholder="Enter a city.."
               className="formControl"
+              autoComplete="on"
             />
           </div>
           <div className="col-3">
             {" "}
-            <input type={"submit"} value="Search" className="btn btn-primary" />
+            <input
+              type={"submit"}
+              value="Search"
+              className="btn btn-primary w-100"
+            />
           </div>
         </div>
       </form>
@@ -30,7 +35,9 @@ const Weather = () => {
             src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
             alt="cloudy"
           />
-          13°C
+          <span className="temperature">13</span>
+          <span className="unit">°C</span>
+          
         </div>
         <div className="col-6">
           <ul>

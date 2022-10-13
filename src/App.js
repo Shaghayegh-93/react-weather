@@ -8,7 +8,10 @@ function App() {
         <Weather />
         <footer>
           This project was coded by Shaghayegh and is
-          <a href="https://github.com/Shaghayegh-93/react-weather" target={"_blank"}></a>
+          <a
+            href="https://github.com/Shaghayegh-93/react-weather"
+            target={"_blank"}
+          >open-sourced on GitHub</a>
         </footer>
       </div>
     </div>
