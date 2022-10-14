@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate.js";
+import WeatherIcon from "./WeatherIcon.js";
 
 const WeatherInfo = ({ info }) => {
   return (
@@ -14,10 +15,8 @@ const WeatherInfo = ({ info }) => {
       </ul>
       <div className="row">
         <div className="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-            alt={info.description}
-          />
+          <WeatherIcon code={info.icon}  />
+         
           <span className="temperature">{Math.round(info.temperature)}</span>
           <span className="unit">°C</span>
         </div>
