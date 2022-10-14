@@ -10,15 +10,16 @@ const FormattedDate = ({ date }) => {
     "Friday",
     "Saturday",
   ];
+
+  let day = days[date.getDay()];
+  let hours = date.getHours();
+  let minutes = date.geMinutes();
   if (hours < 10) {
     hours = `0${hours}`;
   }
   if (minutes < 0) {
     minutes = `0${minutes}`;
   }
-  const day = days[date.getDay()];
-  const hours = date.getHours();
-  const minutes = date.geMinutes();
   return (
     <div>
       {day} {hours} :{minutes}{" "}
