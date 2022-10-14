@@ -10,10 +10,13 @@ const FormattedDate = ({ date }) => {
     "Friday",
     "Saturday",
   ];
+  console.log(date);
 
   let day = days[date.getDay()];
+  // console.log(day)
+
   let hours = date.getHours();
-  let minutes = date.geMinutes();
+  let minutes = date.getMinutes();
   if (hours < 10) {
     hours = `0${hours}`;
   }
@@ -22,7 +25,7 @@ const FormattedDate = ({ date }) => {
   }
   return (
     <div>
-      {day} {hours} :{minutes}{" "}
+      {day} {hours} :{minutes}
     </div>
   );
 };

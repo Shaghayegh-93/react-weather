@@ -10,7 +10,7 @@ function App() {
           This project was coded by Shaghayegh and is
           <a
             href="https://github.com/Shaghayegh-93/react-weather"
-            target={"_blank"}
+            // target={"_blank"}
           >
             open-sourced on GitHub
           </a>
