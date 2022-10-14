@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate.js";
 import WeatherIcon from "./WeatherIcon.js";
+import WeatherTemperature from "./WeatherTemperature.js";
 
 const WeatherInfo = ({ info }) => {
   return (
@@ -11,14 +12,13 @@ const WeatherInfo = ({ info }) => {
         <li>
           <FormattedDate date={info.date} />
         </li>
-        <li className="text-capitalize">{info.description}</li>
+        <li className="text-capitalize mb-3">{info.description}</li>
       </ul>
       <div className="row">
         <div className="col-6">
-          <WeatherIcon code={info.icon}  />
-         
-          <span className="temperature">{Math.round(info.temperature)}</span>
-          <span className="unit">°C</span>
+          <WeatherIcon code={info.icon} />
+
+          <WeatherTemperature celcius={info.temperature} />
         </div>
         <div className="col-6">
           <ul>

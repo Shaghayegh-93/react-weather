@@ -26,7 +26,8 @@
   color: rgb(33, 33, 33);
   font-size: 40px;
   line-height: 64px;
-  margin-left: 10px;
+  margin-left: 5px;
+  
 }
 .weather .unit {
   font-weight: 400;
