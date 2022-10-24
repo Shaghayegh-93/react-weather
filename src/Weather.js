@@ -64,7 +64,7 @@ const Weather = ({ defaultCity }) => {
         </form>
         <WeatherInfo info={weatherData} />
 
-        {/* <WeatherForecast cordinates={weatherData.cord} /> */}
+        <WeatherForecast cordinates={weatherData.cord} />
       </div>
     );
   } else {
