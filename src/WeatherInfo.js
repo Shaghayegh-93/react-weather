@@ -16,7 +16,7 @@ const WeatherInfo = ({ info }) => {
       </ul>
       <div className="row">
         <div className="col-6">
-          <WeatherIcon code={info.icon} />
+          <WeatherIcon code={info.icon} size={80} />
 
           <WeatherTemperature celcius={info.temperature} />
         </div>
