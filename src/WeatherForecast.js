@@ -45,7 +45,7 @@ export default function WeatherForecast(props) {
 
   useEffect(() => {
     setLoaded(false);
-  }, [props.coordinates]);
+  }, [props.cordinates]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
